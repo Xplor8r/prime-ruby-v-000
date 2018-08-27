@@ -1,11 +1,8 @@
-def prime?(num)
-  Math.sqrt(num).floor.downto(2).each do |i| 
-    if num % i == 0
-      return TRUE
-    elsif num > 0
-      return FALSE
-    else
-      return FALSE
-    end
-  end
+
+11
+down vote
+def is_prime?(num)
+  return false if num <= 1
+  Math.sqrt(num).to_i.downto(2).each {|i| return false if num % i == 0}
+  true
 end
