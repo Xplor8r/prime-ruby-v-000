@@ -1,11 +1,11 @@
 def prime?(num)
   Math.sqrt(num).floor.downto(2).each do |i| 
     if num % i == 0
-      TRUE
+      return TRUE
     elsif num > 0
-      FALSE
+      return FALSE
     else
-      FALSE
+      return FALSE
     end
   end
 end
