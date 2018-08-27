@@ -1,4 +1,8 @@
 def prime?(int)
-  int <= 0
-  (2..Math.sqrt(int)).none? { |i| (int % i).zero? }
+  if int <= 0
+    (2..Math.sqrt(int)).none? { |i| (int % i).zero? }
+    TRUE
+  else
+    FALSE
+  end
 end
