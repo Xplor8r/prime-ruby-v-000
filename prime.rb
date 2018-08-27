@@ -1,4 +1,4 @@
-def prime?(int)
-  int <= 0
-  (2..Math.sqrt(int)).none? { |i| (int % i).zero? }
+def is_prime?(num)
+   Math.sqrt(num).floor.downto(2).each {|i| return false if num % i == 0}
+   true
 end
